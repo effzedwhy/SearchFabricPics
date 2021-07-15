@@ -7,14 +7,13 @@ const SearchForm = () => {
 
   const refInput = useRef()
 
-  console.log(userInput)
-
   const searchHandler = e => {
     e.preventDefault()
     const input = refInput.current.value
-
-    setUserInput(input)
-    Images(userInput)
+    if (input !== '') {
+      setUserInput(input)
+      Images(userInput)
+    }
   }
 
   return (
@@ -34,9 +33,7 @@ const SearchForm = () => {
           </div>
         </form>
       </section>
-      <section>
-        <Images userInput={userInput} />
-      </section>
+      <section>{userInput !== '' && <Images userInput={userInput} />}</section>
     </Fragment>
   )
 }

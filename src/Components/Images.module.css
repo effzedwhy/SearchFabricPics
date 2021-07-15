@@ -1,3 +1,10 @@
 .img {
-  width: 250px;
+  width: 400px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }

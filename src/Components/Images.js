@@ -10,20 +10,19 @@ const getFromImages = [
 ];
 
 const image = [];
+let getImages = "";
 
 export const Images = ({ userInput }) => {
-  console.log(userInput);
+  if (userInput !== "") {
+    getImages = getFromImages.filter((img) => img === userInput);
+  }
 
-  const getImages = getFromImages.filter((img) => img === userInput);
-
-  console.log(getImages);
   const fullImage = "/images/" + getImages + ".jpg";
 
   image.push(fullImage);
-  console.log(fullImage);
 
   return (
-    <div>
+    <div className={classes.container}>
       <img className={classes.img} src={fullImage} alt="imgs"></img>
     </div>
   );
