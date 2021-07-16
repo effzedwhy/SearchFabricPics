@@ -23,7 +23,7 @@ const SearchForm = () => {
           <label className={classes['search-text']}>Search</label>
           <div className={classes['search-container']}>
             <input
-              placeholder='Search by fabric name'
+              placeholder='Search by fabric name for e.g boat_navy1'
               className={classes['search-box']}
               ref={refInput}
             ></input>
