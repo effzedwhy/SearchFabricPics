@@ -16,6 +16,9 @@ const SearchForm = () => {
     }
   }
 
+  const onChangeHandler = () => {
+    setUserInput('')
+  }
   return (
     <Fragment>
       <section className={classes['form-container']}>
@@ -26,6 +29,7 @@ const SearchForm = () => {
               placeholder='Search by fabric name for e.g boat_navy1'
               className={classes['search-box']}
               ref={refInput}
+              onChange={onChangeHandler}
             ></input>
             <button className={classes['search-btn']} type='submit'>
               Search

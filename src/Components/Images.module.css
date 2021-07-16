@@ -8,3 +8,10 @@
   justify-content: center;
   margin-bottom: 40px;
 }
+
+@media (max-width: 600px) {
+  .img {
+    width: 90vw;
+    border: none;
+  }
+}
