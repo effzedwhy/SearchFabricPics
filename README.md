@@ -1,4 +1,4 @@
-# SearchFabricPics
+# Search Fabric Pics
 
 Built with react
 
